@@ -272,7 +272,7 @@
 
   <hr class="sidebar-rule">
 
-  <p class="side-cv"><a href="Khansa_Khanam_CV.pdf" target="_blank" rel="noopener">Curriculum vitae</a></p>
+  <p class="side-cv"><a href="KhansaKhanam_CV.pdf" target="_blank" rel="noopener">Curriculum vitae</a></p>
 
   <hr class="sidebar-rule">
 
@@ -313,20 +313,20 @@
 
       <div class="entry">
         <div class="entry-row">
-          <span class="entry-title">Research Assistant</span>
-          <span class="entry-date">Jan 2026 &ndash; Present</span>
+          <span class="entry-title">Research Assistant (Part-Time)</span>
+          <span class="entry-date">Apr 2026 &ndash; Present</span>
         </div>
         <div class="entry-sub">
           <span class="entry-org">Rutgers University, School of Communication and Information</span>
           <span class="entry-loc">New Brunswick, NJ</span>
         </div>
-        <span class="entry-advisor">Advised by: Tawfiq Ammari and Robert Wolfe</span>
+        <span class="entry-advisor">Advised by: Prof.Tawfiq Ammari and Prof.Robert Wolfe</span>
         <div class="entry-thread">Documentation bias in clinician notes:</div>
         <ul>
-          <li>Investigating whether patient race is recoverable from the writing style of clinician notes, as a proxy measure for documentation bias, across fine-tuned, instruction-tuned, and classical approaches.</li>
-          <li>Fine-tuned open-weight models (Llama-2-7B, Bode-7B-PT) under imbalanced and class-balanced regimes; diagnosed the failure mode as architectural rather than tuning-related, with over half of records exceeding the 4K context window.</li>
-          <li>Built an in-context-learning pipeline (Llama-3.1-8B with recursive semantic chunking and metadata-/TF-IDF-similarity-based few-shot retrieval), with strict pre-split partitioning to prevent leakage and majority-vote aggregation across chunks.</li>
-          <li>Ran an ablation across approaches; a hybrid TF-IDF + BERTopic + SGDClassifier ensemble reached <span class="mono">69.8% accuracy / 0.67 macro-F1</span>, outperforming every LLM configuration tested. Applied SHAP with a log-odds link to trace which semantic topics drove each class prediction.</li>
+        <li>Investigating whether racial documentation bias in clinical notes — disparities in how patients are described, independent of medical content — is detectable by computational classifiers and human readers alike.</li>
+        <li>Tested race-predictive documentation patterns using open-weight LLMs (Llama-2-7B, Bode-7B-PT; retrieval-augmented Llama-3.1-8B), diagnosing context-window truncation as the dominant failure mode; a feature-engineered SGDClassifier (BERTopic/TF-IDF/LIWC) outperformed all LLM configurations (0.70 macro F1, cross-validated), but held-out testing surfaced a sharp per-class disparity (F1 = 0.72 white vs. 0.30 Black patients, n=27) — an early, small-sample signal of unequal model legibility across groups.</li>
+        <li>Manually double-coded 123 notes against a testimonial-injustice and stigmatizing-language schema; found near-perfect human–human agreement on factual SDOH presence (κ = 0.85) but weak agreement on subjective bias markers (κ ≤ 0.43), indicating automated bias detection did not substitute for expert coding in this setting.</li>
+        <!-- <li>Parallel workstream: evaluated Llama-3.3-70B on untranslated Brazilian Portuguese notes for SDOH extraction, validated against a two-annotator sample (κ = 0.70).</li> -->
         </ul>
         <div class="entry-thread">Multilingual SDOH extraction from EHRs:</div>
         <ul>
@@ -339,26 +339,23 @@
 
       <div class="entry">
         <div class="entry-row">
-          <span class="entry-title">Research Assistant &mdash; Participatory AI Design with Home Care Cooperatives</span>
+          <span class="entry-title">Research Contractor (Full-Time) &mdash; Participatory AI Design with Home Care Cooperatives</span>
           <span class="entry-date">Jan 2026 &ndash; Jul 2026</span>
         </div>
         <div class="entry-sub">
           <span class="entry-org">University at Buffalo &mdash; Department of AI and Society</span>
           <span class="entry-loc">Buffalo, NY</span>
         </div>
-        <span class="entry-advisor">Advised by Kenneth Joseph and Joy Ming &mdash; work led to a CHI 2027 submission (see Publications)</span>
+        <span class="entry-advisor">Advised by Prof.Kenneth Joseph and Prof.Joy Ming &mdash; work led to a CHI 2027 submission (see Publications)</span>
         <ul>
-          <li>Co-designed and facilitated a multi-session workshop study with caregivers at member-owned home care cooperatives: pre-survey instrument, critical AI literacy curriculum, structured design activities, and post-test.</li>
-          <li>Built the curriculum covering how AI systems are constructed and where they fail (algorithmic bias, hallucination, sycophancy bias, automation bias), mapping harms across individual, group, organizational, and systems levels alongside emerging responses (data cooperatives, Indigenous data sovereignty, community audit, collective bargaining).</li>
-          <li>Applied BERTopic and TF-IDF analysis across open-ended survey responses on AI perception, anticipated benefits, and perceived risks to identify current use, desired changes, and workers&rsquo; foresight for the sector.</li>
-          <li>Authored the resulting adoption framework for co-ops and NGOs: FATE-based tool evaluation, a stakeholder participation ladder, a data sensitivity tiering model, pilot-to-expand-or-exit criteria, and explicit refusal criteria for where AI should not be used (crisis support, conflict resolution, decisions affecting housing, benefits, or livelihood).</li>
+        <li>Contributed to inductive thematic analysis of design-workshop transcripts from caregivers, administrators, and developers at member-owned home care cooperatives, surfacing cross-cutting themes (resource tradeoffs, information privacy, worker voice) that informed the paper's synthesis of benefits, harms, and design opportunities for AI in care-cooperative settings.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-row">
-          <span class="entry-title">Research Data Scientist &mdash; Perception of AI for Mental Health Support</span>
-          <span class="entry-date">Jul 2025 &ndash; Jul 2026</span>
+          <span class="entry-title">Independent Researcher (Volunteer) &mdash; Perception of AI for Mental Health Support</span>
+          <span class="entry-date">Jul 2025 &ndash; Feb 2026</span>
         </div>
         <div class="entry-sub">
           <span class="entry-org">University at Buffalo &mdash; Department of Communications</span>
@@ -366,14 +363,16 @@
         </div>
         <span class="entry-advisor">Advised by Yotam Ophir</span>
         <ul>
-          <li>Analyzed Reddit discourse on the use of AI for mental health support: how people describe turning to these tools, what they report gaining, and where they voice concern about dependence, misinformation, and substitution for human care.</li>
-          <li>Code and analysis: <a href="https://github.com/KhansaKhanam/AI4MentalHealth" target="_blank" rel="noopener">github.com/KhansaKhanam/AI4MentalHealth</a></li>
+        <li>Studied how the public perceives and evaluates AI mental health tools in naturalistic use, and whether a hybrid human+LLM pipeline can reliably annotate this discourse at scale.</li>
+        <li>Owned the full technical pipeline independently — unpaid, with no formal appointment — while collaborators in the Department of Communication contributed domain framing: fine-tuned mental/mental-roberta-base with class weighting for severe label imbalance over ~20,000 Reddit posts (four-way functional-sentiment schema) and routed low-confidence predictions to an LLM for re-classification.</li>
+        <li>Validated the hybrid annotation approach against ~800 human-labeled posts (raw agreement, Cohen's κ, Krippendorff's α). Manuscript in preparation (see Publications).</li>
+        <li>Code and analysis: github.com/KhansaKhanam/AI4MentalHealth</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-row">
-          <span class="entry-title">Research Assistant &mdash; Bayesian Optimization for Simulation Calibration</span>
+          <span class="entry-title">Research Assistant (Part-Time) &mdash; Bayesian Optimization for Simulation Calibration</span>
           <span class="entry-date">Sep 2024 &ndash; Jan 2026</span>
         </div>
         <div class="entry-sub">
@@ -383,7 +382,7 @@
         <span class="entry-advisor">Advised by Ashlee Ford Versypt</span>
         <ul>
           <li>Co-authored a constrained Bayesian optimization framework using Gaussian Process surrogates for both the objective (weighted RMSE against experimental invasion distance) and a morphological feasibility constraint, with a feasibility-informed acquisition function guiding the search.</li>
-          <li>Replaced heuristic parameter tuning with a reproducible, uncertainty-aware calibration pipeline for agent-based models of collective cell invasion.</li>
+          <li>Identified experimentally consistent parameter regimes for spheroid and network invasion phenotypes on a Pareto-optimal accuracy/feasibility trade-off. Manuscript in preparation (see Publications); presented by co-authors at ECMTB 2026, SIAM LS26, and FOPAM 2026.</li>
         </ul>
       </div>
     </section>
